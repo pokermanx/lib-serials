@@ -9,8 +9,12 @@
   list-style: none;
   /* user-select: none; */
   text-decoration: none;
+  outline: none;
 }
 
+button{
+  cursor: pointer;
+}
 
 body {
     width: 100%;
@@ -23,6 +27,25 @@ body {
     /* background: linear-gradient(to right, #34e89e, #0f3443); */
     /* background-image: url(https://images.unsplash.com/photo-1516692935701-4f35bff8b9f6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI0MX0&s=cd171c4f92283ec47a2e191067f9ab79&auto=format&fit=crop&w=1950&q=80); */
   }
+
+h1{
+  font-size: 36px;
+}
+h2{
+  font-size: 30px;
+}
+h3{
+  font-size: 24px;
+}
+h4{
+  font-size: 20px;
+}
+h5{
+  font-size: 18px;
+}
+h6{
+  font-size: 16px;
+}
 
 /* PANEL NAVGATiON BEGiN */
 
@@ -97,14 +120,22 @@ body {
 
 
 .add{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 360px;
   width: 300px;
   margin: 20px 0 20px 20px;
 }
 
+.add button{
+  border-radius: 50%;
+  background-color: transparent;
+  border: none;
+}
+
 .add i{ 
   color: #0000001c;
-  line-height: 360px;
   width: 100%;
   text-align: center;
   font-size: 10em;
@@ -113,6 +144,7 @@ body {
 .add i:hover{ 
   color: #8BC34A;
 }
+
 
 .info{
     display: flex;
@@ -208,3 +240,107 @@ article{
   color: white;
 }
 /* CARD */
+
+
+/* ADD WINDOW */
+
+.modal_window {
+  display: none; 
+  position: fixed;
+  z-index: 4;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.add_window{
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 5px;
+  position: relative;
+  top: 10%;
+  margin: 0 auto;
+  z-index: 9;
+  width: 1020px;
+  height: 720px;
+  background-color: #f8f8f8;
+}
+
+.top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: #2C2C2C;
+  padding: 0 25px;
+}
+
+.top button{
+  background-color: transparent;
+  border: none;
+  color: white;
+  transition: .3s;
+}
+
+.top button:hover{
+  color: #c0392b;
+}
+
+.top .name_window{
+  color: white;
+}
+
+.elements{
+  width: 100%;
+  height: 100%;
+  padding: 25px 80px;
+}
+
+.add_title, .add_article{
+  display: flex;
+  flex-direction: column;
+}
+
+.add_title{
+  margin: 0 0 25px 0; 
+}
+
+.add_title input, .add_article textarea{
+  width: 360px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 2px solid #ced4da;
+  resize: none;
+}
+.add_title input:hover, .add_article textarea:hover{
+  border: 2px solid rgb(219, 255, 178);
+}
+
+.elements button{
+  position: absolute;
+  bottom: 25px;
+  right: 80px;
+  padding: 15px 30px;
+  background-color: #8BC34A;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  border-bottom: solid 5px rgb(108, 161, 47);
+  transition: .3s
+}
+
+.elements button:hover{
+  background-color: rgb(127, 185, 60);
+  border-bottom: solid 2.5px rgb(108, 161, 47);
+}
+
+.elements button:active{
+  border-bottom: none;
+}
+/* ADD WINDOW */
