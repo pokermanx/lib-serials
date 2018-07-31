@@ -1,0 +1,21 @@
+.add_card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 360px;
+    width: 300px;
+    margin: 20px 0 20px 20px;
+}
+
+.add_card i{
+    font-size: 8em;
+    color: hsla(0, 0%, 0%, 0.1);
+    transition: 0.3s;
+    cursor: pointer;
+    user-select: none;
+}
+
+.add_card i:hover{
+    font-size: 10em;
+    color: #8fd16f;
+}
