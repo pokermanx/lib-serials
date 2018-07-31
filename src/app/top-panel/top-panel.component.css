@@ -1,0 +1,33 @@
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    background-color: #2C2C2C;
+    padding: 0 24px;
+    color: white;
+}
+
+.top ul{
+    display: flex;
+}
+
+.top ul li{
+    margin: 0 5px;
+    transition: .3s;
+    user-select: none;
+    cursor: pointer;
+}
+
+.top ul li:first-child:hover{
+    color: #8FD16F;
+}
+
+.top ul li:nth-child(2):hover{
+    color: #ff404a;
+}
+
+.top ul li:last-child:hover{
+    color: #92c9ff;
+}
