@@ -1,78 +1,132 @@
-/* CARD */
+.cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .card{
-    position: relative;
-    overflow: hidden;
-    height: 360px;
-    width: 300px;
-    border-radius: 5px;
-    margin: 20px 0 20px 20px;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
-  }
-  
-  .card .image{
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    background-image: url(https://tvseriescritic.files.wordpress.com/2016/10/stranger-things-bicycle-lights-children.jpg);
-    transition: .5s;
-  }
-  
-  .data{
-    position: absolute;
-    width: 300px;
-    max-height: 360px;
-    bottom: 0;
-    background-color: hsla(0, 0%, 0%, 0.7);
-    transform: translateY(calc(130px + 1em));
-    transition: 0.5s;
-  }
-  
-  .card .data .content{ 
-    padding: 1em;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .card:hover .data{
-    transform: translateY(0);
-  }
-  
-  .card:hover .image{
-    transform: scale(1.1);
-    filter: brightness(124%);
-  }
-  
-  .title {
-    margin-bottom: 14px;
-  }
-  .data .article{
-  font-size: 12px;
-  }
-  .more{
-  margin: 0 auto;
-  text-align: center;
-  padding: 4px 10px;
-  margin-top: 1em;
-  border-radius: 25px;
-  border: #c0392b solid 2px;
-  outline: none;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 420px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  /* margin: 25px 0 0 25px; */
+  margin-bottom: 25px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.overlay{
+  height: 45%;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+.image{
+  height: 100%;
+  width: 100%;
+  /* background-image: url(https://cdn.wccftech.com/wp-content/uploads/2015/12/dayz-alone-on-the-hill-dayz.jpg); */
+  background-position: center;
+  background-size: cover;
+  filter: contrast(70%);
+  transition: .5s;
+} 
+
+.card:hover .image{
+  filter: contrast(100%);
+  transform: scale(1.1);
+}
+
+.overlay i{
+  position: absolute;
+  right: 0;
   color: white;
-  background-color: transparent;
-  transition: .3s;
-  }
-  
-  .more:hover{
-  background-color: #c0392b;
-  }
-  
-  .data h1{
-    text-transform: uppercase;
-    font-size: 20px;
-    color: white;
-  }
-  
-  article{
-    color: white;
-  }
-  /* CARD */
+  font-size: 24px;
+  margin: 15px 15px 0 0;
+  cursor: pointer;
+  color: #ff404a;
+  opacity: 0;
+  right: -50px;
+  transition: .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover .overlay i{
+  opacity: 1;
+  right: 0;
+}
+
+.title{
+  position: absolute;
+  bottom: 0;
+  color: white;
+  text-transform: capitalize;
+  text-align: center;
+  width: 100%;
+  padding: 10px 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.data{
+  height: 45%;
+  transition: .5s;
+}
+
+.data article{
+  padding: 15px;
+  font-size: 14px;
+}
+
+.bottom{
+  padding: 0 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+  width: 100% ;
+  background-color: #efefef;
+  border-top: #e0e0e0 1px solid ;
+}
+
+.bottom label{
+  font-size: 14px;
+  color: #888888;
+}
+
+
+.bottom i{
+  position: absolute;
+  opacity: 0;
+  font-size: 24px;
+  cursor: pointer;
+  right: 30px;
+  transition: .5s;
+}
+
+
+ .card:hover .bottom i{
+  opacity: 1;
+  right: 15px;
+}
+/* CONTENT END*/
+
+/* CARD */
+.genre{
+  display: flex;
+  font-size: 12px;
+  color: #888888;
+}
+
+.genre ul{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 15px;
+  margin-top: 15px;   
+  width: 100%;    
+}
+
+.genre ul li a{
+  color: #888888;
+  margin: 0 3px;
+}

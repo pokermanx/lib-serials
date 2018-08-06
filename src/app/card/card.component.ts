@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+
+
 
 @Component({
   selector: 'app-card',
@@ -12,4 +14,9 @@ export class CardComponent implements OnInit {
   ngOnInit() {
   }
 
+  @Input() data;
+
+  togl(data: any){
+    data.favorite = !data.favorite;
+  }
 }

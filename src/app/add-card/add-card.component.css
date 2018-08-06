@@ -2,9 +2,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 360px;
     width: 300px;
-    margin: 20px 0 20px 20px;
+    height: 420px;
+    /* margin: 20px 0 20px 20px; */
 }
 
 .add_card i{
