@@ -7,6 +7,7 @@ import { CardComponent } from './card/card.component';
 import { MainContainerComponent } from './main-container/main-container.component';
 import { TopPanelComponent } from './top-panel/top-panel.component';
 import { AddCardComponent } from './add-card/add-card.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -16,7 +17,8 @@ import { AddCardComponent } from './add-card/add-card.component';
     CardComponent,
     MainContainerComponent,
     TopPanelComponent,
-    AddCardComponent
+    AddCardComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule

@@ -1,9 +1,9 @@
 .main_container {
     position: relative;
-    top: 3%;
+    top: 50px;
     display: flex;
     flex-direction: column;
-    max-width: 1300px;
+    max-width: 1325px;
     height: auto;
     margin: 0 auto;
     overflow: hidden;
@@ -16,4 +16,6 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 25px;
   }
