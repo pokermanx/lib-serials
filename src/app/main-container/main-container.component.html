@@ -1,7 +1,11 @@
-<div class="main_container">
-  <app-top-panel></app-top-panel>
+<app-top-panel></app-top-panel>
+<div class="main_container"> 
   <div class="cards">
     <app-card *ngFor="let s of serials" [data]="s" ></app-card>
     <app-add-card></app-add-card>
   </div>
+  <hr>
+  <app-add-new-page></app-add-new-page>
+  <hr>
+  <app-edit-serial></app-edit-serial>
 </div>

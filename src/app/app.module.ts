@@ -8,6 +8,9 @@ import { MainContainerComponent } from './main-container/main-container.componen
 import { TopPanelComponent } from './top-panel/top-panel.component';
 import { AddCardComponent } from './add-card/add-card.component';
 import { FooterComponent } from './footer/footer.component';
+import { AddNewPageComponent } from './add-new-page/add-new-page.component';
+import { EditSerialComponent } from './edit-serial/edit-serial.component';
+import { SerialInfoComponent } from './serial-info/serial-info.component';
 
 
 
@@ -18,7 +21,10 @@ import { FooterComponent } from './footer/footer.component';
     MainContainerComponent,
     TopPanelComponent,
     AddCardComponent,
-    FooterComponent
+    FooterComponent,
+    AddNewPageComponent,
+    EditSerialComponent,
+    SerialInfoComponent
   ],
   imports: [
     BrowserModule

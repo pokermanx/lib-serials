@@ -1,12 +1,18 @@
 .top{
     display: flex;
+    height: 60px;
+    width: 100%;
+    background-color: #363636;
+    padding: 0 24px;
+    color: #fff;
+}
+
+.main_container {
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 50px;
-    width: 100%;
-    background-color: #2C2C2C;
-    padding: 0 24px;
-    color: white;
+    width: 1200px;
+    margin: 0 auto;
 }
 
 .top ul{
@@ -30,4 +36,30 @@
 
 .top ul li:last-child:hover{
     color: #92c9ff;
+}
+
+.top label{
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+.main_container form{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.main_container form input{
+    margin-right: 15px;
+    width: 25%;
+    transition: .3s;
+}
+
+.main_container form input:focus{
+    width: 40%;
 }
