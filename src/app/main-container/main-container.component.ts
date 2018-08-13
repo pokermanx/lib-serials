@@ -38,11 +38,6 @@ const serials = [
       title: "the walking dead",
       image: "https://cdn1.thr.com/sites/default/files/imagecache/scale_crop_768_433/2016/10/TWDDeathNeganH2016.jpg",
       favorite: false
-  },
-  {
-      title: "13 reasons why",
-      image: "https://images-na.ssl-images-amazon.com/images/I/51kI5RoEVkL._SS500.jpg",
-      favorite: true
   }
 ];
 

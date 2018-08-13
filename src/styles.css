@@ -99,6 +99,30 @@ body {
   border-color: #dae0e5;
 }
 
+.btn-dark{
+  color: #fff;
+  background-color: #343a40;
+  border-color: #343a40;
+}
+
+.btn-dark:hover {
+  color: #fff;
+  background-color: #23272b;
+  border-color: #1d2124;
+}
+
+
+.btn-blue{
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-dark:hover {
+  color: #fff;
+  background-color: #0062cc;
+  border-color: #005cbf;
+}
 
 input {
   display: block;
@@ -122,4 +146,27 @@ input:focus {
   border-color: #80bdff;
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.display-1{
+  font-size: 6rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+.display-2{
+  font-size: 5.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.display-3{
+  font-size: 4.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.display-4{
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.2;
 }

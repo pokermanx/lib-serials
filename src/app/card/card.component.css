@@ -47,20 +47,19 @@
 
 .overlay i{
   position: absolute;
-  right: 0;
-  color: white;
   font-size: 24px;
   margin: 15px 15px 0 0;
   cursor: pointer;
-  color: #20c997;
+  color: #e84545;
   opacity: 0;
-  right: -50px;
+  right: 0px;
+  top: -50px;
   transition: .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .card:hover .overlay i{
   opacity: 1;
-  right: 0;
+  top: -19px;
 }
 
 .data i{

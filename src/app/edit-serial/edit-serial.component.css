@@ -36,12 +36,16 @@ input:focus, textarea:focus {
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
-.add_new{
+.edit_page{
+    position: relative;
+    top: 60px; 
+    width: 1200px;
     padding: 50px;
     color: #666666;
+    margin: 0 auto;
 }
 
-.add_new h1{
+.edit_page h1{
     margin-bottom: 25px;
     font-size: 28px;
     color: #454545;
@@ -72,4 +76,9 @@ label{
 
 .btn:not(:first-child){
     margin-right: 15px;
+}
+
+.bottom{
+    display: flex;
+    justify-content: space-between;
 }
