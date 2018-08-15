@@ -15,6 +15,7 @@ label {
 	display: block;
 	border-radius: 100px;
 	position: relative;
+	user-select: none;
 }
 
 label:after {
