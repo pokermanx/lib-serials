@@ -1,0 +1,38 @@
+.dark-theme body{
+  background-color: rgb(41, 41, 41);
+}
+
+.dark-theme body .top{
+  background-color: #222;
+}
+
+.dark-theme body .card h3{
+  color: white;
+}
+
+.dark-theme body .card article{
+  color: white;
+}
+
+.dark-theme body .card .data i{
+  color: white;
+}
+
+.dark-theme body .card .blur{
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgb(41, 41, 41));
+}
+
+.dark-theme body .card .bottom{
+  background-color: #222;
+  border-top: 1px solid rgb(25, 25, 25);
+}
+
+
+.dark-theme body .card .bottom label:not(:last-child){
+  border-right: 1px solid rgb(25, 25, 25);
+}
+
+.dark-theme body .card .bottom label{
+  color: #b1b1b1;
+}
+
