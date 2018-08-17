@@ -35,7 +35,8 @@ label:after {
 }
 
 input:checked + label {
-	background: #5B4FC4;
+	  background: linear-gradient(to right, #8a2387, #e94057, #f27121);
+	  background: linear-gradient(to right, #fdc830, #f37335);
 }
 
 input:checked + label:after {

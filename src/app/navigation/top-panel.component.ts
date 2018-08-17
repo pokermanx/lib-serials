@@ -26,4 +26,8 @@ export class TopPanelComponent implements OnInit {
       this.darkTheme = false;
     }
   }
+
+  test(event){
+    console.log(event);
+  }
 }

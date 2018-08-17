@@ -13,7 +13,8 @@ import { AddCardComponent } from './add-card/add-card.component';
 import { FooterComponent } from './footer/footer.component';
 import { AddNewPageComponent } from './add-new-page/add-new-page.component';
 import { EditSerialComponent } from './edit-serial/edit-serial.component';
-import { SerialInfoComponent } from './serial-info/serial-info.component';
+import { SerialInfoComponent } from './serial-detail/serial-info.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { SerialInfoComponent } from './serial-info/serial-info.component';
     FooterComponent,
     AddNewPageComponent,
     EditSerialComponent,
-    SerialInfoComponent
+    SerialInfoComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

@@ -1,22 +1,18 @@
 <div class="col">
     <div class="card">
         <div class="overlay">
-            <div class="image" [ngStyle]="{'background-image': 'url(' + data.image + ')'}"></div>
+            <div class="image" [ngStyle]="{'background-image': 'url(' + data.imgUrl + ')'}"></div>
             <i class="{{data.favorite ? 'fas fa-bookmark' : 'far fa-bookmark'}}" (click)="togl()"></i>
         </div>
         <div class="data">
             <h3 class="title">{{data.title}}</h3>
-            <i class="fas fa-angle-double-right" routerLink="/info"></i>
-            <article>When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural
-                forces and one strange little girl.When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural
-                forces and one strange little girl.When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural
-                forces and one strange little girl.</article>
+            <i class="fas fa-angle-double-right" routerLink="/serial/{{data.id}}"></i>
+            <article>{{data.description}}</article>
         </div>
         <div class="blur"></div>
-        
         <div class="bottom">
-            <label for="" class="seasons">2 SEASONS</label>
-            <label for="" class="series">16 EPISODES</label>
+            <p class="seasons">{{data.seasons}} seasons</p>
+            <p class="episodes">{{data.episodes}} episodes</p>
         </div>
     </div>
 </div>

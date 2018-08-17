@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="image" [ngStyle]="{'background-image': 'url(' + serials[id].imgUrl + ')'}">
+      <h1 class="display-2">{{serials[id].title}}</h1>
+  </div>
+  <div class="data">
+    <div class="top">
+      <h1>About</h1>
+        <i class="far fa-bookmark"></i>
+    </div>
+    <p>{{serials[id].description}}</p>
+      <h1>Seasons & Episodes</h1>
+  </div>
+  
+</div>

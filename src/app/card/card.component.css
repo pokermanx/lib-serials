@@ -108,15 +108,16 @@
   align-items: center;
 }
 
-.bottom label{
+.bottom p{
   
   text-align: center;
   font-size: 14px;
   flex-grow: 1;
   color: #888888;
+  text-transform: uppercase; 
 }
 
-.bottom label:not(:last-child){
+.bottom p:not(:last-child){
   border-right: 1px solid #e0e0e0;
 }
 /* CONTENT END*/
