@@ -19,7 +19,8 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "./main-styles/styles.css",
+        "./main-styles/dark-theme.css"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",

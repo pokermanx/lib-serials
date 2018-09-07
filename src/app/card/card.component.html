@@ -1,23 +1,18 @@
-<div class="card">
-    <div class="overlay">
-    <div class="image" [ngStyle]="{'background-image': 'url(' + data.image + ')'}"></div>
-        <i  class="{{data.favorite ? 'fas fa-heart' : 'far fa-heart'}}" (click)="togl(data)"></i>
-        <h3 class="title">{{data.title}}</h3>  
-    </div>
-    <div class="data">
-        <div class="genre">
-            <ul>
-                <li><a href="">Science fiction</a>,</li>
-                <li><a href="">Horror</a>,</li>
-                <li><a href="">Supernatural</a>,</li>
-                <li><a href="">Period drama</a></li>
-            </ul>
+<div class="col">
+    <div class="card">
+        <div class="overlay">
+            <div class="image" [ngStyle]="{'background-image': 'url(' + data.imgUrl + ')'}"></div>
+            <i class="{{data.favorite ? 'fas fa-bookmark' : 'far fa-bookmark'}}" (click)="togl()"></i>
         </div>
-        <article>When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural
-            forces and one strange little girl.</article>
-    </div>
-    <div class="bottom">
-        <label for="">Read more</label>
-        <i class="fas fa-angle-double-right" (click)="delete()"></i>
+        <div class="data">
+            <h3 class="title">{{data.title}}</h3>
+            <i class="fas fa-angle-double-right" routerLink="/serial/{{data.id}}"></i>
+            <article>{{data.description}}</article>
+        </div>
+        <div class="blur"></div>
+        <div class="bottom">
+            <p class="seasons">{{data.seasons}} seasons</p>
+            <p class="episodes">{{data.episodes}} episodes</p>
+        </div>
     </div>
 </div>

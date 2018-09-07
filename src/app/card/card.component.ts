@@ -16,7 +16,7 @@ export class CardComponent implements OnInit {
 
   @Input() data;
 
-  togl(data: any){
-    data.favorite = !data.favorite;
+  togl(){
+    this.data.favorite = !this.data.favorite;
   }
 }
