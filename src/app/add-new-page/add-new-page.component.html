@@ -2,15 +2,15 @@
   <h1>Add new serial</h1>
   <div class="name">
     <label for="">Name</label>
-    <input type="text">
+    <input type="text" [(ngModel)]="title">
   </div>
   <div class="description">
     <label for="">Description</label>
-    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <textarea name="" id="" cols="30" rows="10" [(ngModel)]="description"></textarea>
   </div>
   <div class="image">
     <label for="">Image URL</label>
-    <input type="text">
+    <input type="text" [(ngModel)]="imgUrl">
   </div>
 
   <div class="bottom">
@@ -18,7 +18,7 @@
       <button routerLink="" class="btn btn-yellow">Cencel<i class="fas fa-ban"></i></button>
     </div>
     <div class="rigth">
-      <button class="btn btn-green">Add<i class="fas fa-plus-circle"></i></button>
+      <button class="btn btn-green" (click) ="AddNewSerialOut(title, description, imgUrl)">Add<i class="fas fa-plus-circle"></i></button>
     </div>
   </div>
 

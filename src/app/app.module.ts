@@ -1,10 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-
+import { HttpModule }      from '@angular/http';
+import { FormsModule } from '@angular/forms';
 import {RouterModule} from '@angular/router';
 import { appRoutes } from '../routers';
-
+import { DataService } from './services/data.service';
 import { AppComponent } from './app.component';
 import { CardComponent } from './card/card.component';
 import { MainContainerComponent } from './main-container/main-container.component';
@@ -32,9 +32,11 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    FormsModule,
+    HttpModule 
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
